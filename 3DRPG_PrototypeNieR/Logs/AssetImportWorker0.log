@@ -15,11 +15,11 @@ C:/Users/user/Desktop/HC/Unity/Unity_HC_TC_3D_RPG_PrototypeNieR/3DRPG_PrototypeN
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60022
+59941
 Successfully changed project path to: C:/Users/user/Desktop/HC/Unity/Unity_HC_TC_3D_RPG_PrototypeNieR/3DRPG_PrototypeNieR
 C:/Users/user/Desktop/HC/Unity/Unity_HC_TC_3D_RPG_PrototypeNieR/3DRPG_PrototypeNieR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 45.10 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 121.74 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
@@ -35,40 +35,40 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2020.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56920
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56388
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009813 seconds.
+Registered in 0.014613 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 43.25 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 99.01 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  5.753 seconds
+- Completed reload, in  7.925 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.122199 seconds.
+Registered in 0.035404 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.484 seconds
+- Completed reload, in  3.867 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
-Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1406 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.2 MB.
-System memory in use after: 68.2 MB.
+Unloading 1407 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.3 MB.
+System memory in use after: 68.3 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1850.
-Total: 4.040500 ms (FindLiveObjects: 0.256200 ms CreateObjectMapping: 0.128300 ms MarkObjects: 3.448900 ms  DeleteObjects: 0.205000 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1851.
+Total: 6.558000 ms (FindLiveObjects: 0.643300 ms CreateObjectMapping: 0.408900 ms MarkObjects: 5.308400 ms  DeleteObjects: 0.194200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -83,167 +83,95 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Animations/Man_Mesh@Punching.fbx
-  artifactKey: Guid(bf4e7c274d6076742ab40c7613b42c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Man_Mesh@Punching.fbx using Guid(bf4e7c274d6076742ab40c7613b42c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f2698ea9d85890046cee258613d0836') in 0.124864 seconds 
-  Import took 0.132385 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.953414 seconds.
-  path: Assets/Animations/Man_Mesh@Punching.fbx
-  artifactKey: Guid(bf4e7c274d6076742ab40c7613b42c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Man_Mesh@Punching.fbx using Guid(bf4e7c274d6076742ab40c7613b42c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76584a7f823aa82d36b2d1220c157143') in 0.007625 seconds 
-  Import took 0.012541 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 84.819202 seconds.
-  path: Assets/Animations/Man_Mesh@Punching.fbx
-  artifactKey: Guid(bf4e7c274d6076742ab40c7613b42c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Man_Mesh@Punching.fbx using Guid(bf4e7c274d6076742ab40c7613b42c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d57290280a4df63812519d8e226c0d') in 0.009235 seconds 
-  Import took 0.013368 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 43.484223 seconds.
-  path: Assets/Animations/Man_Mesh@Standing 2H Magic Attack 04.fbx
-  artifactKey: Guid(57e3c481aac880045af69d14d5582ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Man_Mesh@Standing 2H Magic Attack 04.fbx using Guid(57e3c481aac880045af69d14d5582ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e7e56314172384ceacffbea05288548') in 0.009716 seconds 
-  Import took 0.014767 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.076520 seconds.
-  path: Assets/Animations/Man_Mesh@Standing 2H Magic Attack 04.fbx
-  artifactKey: Guid(57e3c481aac880045af69d14d5582ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Man_Mesh@Standing 2H Magic Attack 04.fbx using Guid(57e3c481aac880045af69d14d5582ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '554068eb4affb1fa64ac947a39d09579') in 0.009407 seconds 
-  Import took 0.013405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.111556 seconds.
-  path: Assets/Animations/Man_Mesh@Standing Melee Attack Kick Ver. 2.fbx
-  artifactKey: Guid(0ae9bbf02d3ff9244a45b57f2a48b832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Man_Mesh@Standing Melee Attack Kick Ver. 2.fbx using Guid(0ae9bbf02d3ff9244a45b57f2a48b832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aab3a1012636e3122bf647b8c0f49bd') in 0.019079 seconds 
-  Import took 0.027722 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 32.742437 seconds.
-  path: Assets/Animations/Man_Mesh@Standing 2H Magic Attack 04.fbx
-  artifactKey: Guid(57e3c481aac880045af69d14d5582ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Man_Mesh@Standing 2H Magic Attack 04.fbx using Guid(57e3c481aac880045af69d14d5582ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd076a84f4d15f69e3eb9f85d3a40134b') in 0.040252 seconds 
-  Import took 0.054943 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.821859 seconds.
-  path: Assets/Animations/Man_Mesh@Standing Melee Attack Kick Ver. 2.fbx
-  artifactKey: Guid(0ae9bbf02d3ff9244a45b57f2a48b832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Man_Mesh@Standing Melee Attack Kick Ver. 2.fbx using Guid(0ae9bbf02d3ff9244a45b57f2a48b832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30e8619dccbf6d1476a38172df69ab47') in 0.018114 seconds 
-  Import took 0.024035 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.636548 seconds.
-  path: Assets/Animations/Man_Mesh@Uppercut.fbx
-  artifactKey: Guid(0578be428f2fdb34389cd7447b93b93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Man_Mesh@Uppercut.fbx using Guid(0578be428f2fdb34389cd7447b93b93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a15c3a4e83f9df5be05a93d44d61a7c5') in 0.022122 seconds 
-  Import took 0.034851 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.814197 seconds.
-  path: Assets/Animations/Man_Mesh@Uppercut.fbx
-  artifactKey: Guid(0578be428f2fdb34389cd7447b93b93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Man_Mesh@Uppercut.fbx using Guid(0578be428f2fdb34389cd7447b93b93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd43d3b769842186ef1dcde39f709b0') in 0.017587 seconds 
-  Import took 0.094857 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.246504 seconds.
-  path: Assets/Animations/Man_Mesh@Uppercut.fbx
-  artifactKey: Guid(0578be428f2fdb34389cd7447b93b93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Man_Mesh@Uppercut.fbx using Guid(0578be428f2fdb34389cd7447b93b93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30c044cdcf6eb63e9e5ba482dfaa2020') in 0.018536 seconds 
-  Import took 0.030249 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.309969 seconds.
-  path: Assets/Animations/Man_Mesh@Standing Melee Attack Kick Ver. 2.fbx
-  artifactKey: Guid(0ae9bbf02d3ff9244a45b57f2a48b832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Man_Mesh@Standing Melee Attack Kick Ver. 2.fbx using Guid(0ae9bbf02d3ff9244a45b57f2a48b832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd726188bec3c826b8a64f112bbe57af5') in 0.019737 seconds 
-  Import took 0.030659 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 419.909836 seconds.
   path: Assets/Invector-3rdPersonController_LITE/Animator/Invector@BasicLocomotion.controller
   artifactKey: Guid(cbd1db45c75e5b948a5befe9ecb80421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Invector-3rdPersonController_LITE/Animator/Invector@BasicLocomotion.controller using Guid(cbd1db45c75e5b948a5befe9ecb80421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bef9eea5bc1ce28c4a4ec7db2ef3a864') in 0.155613 seconds 
-  Import took 0.165828 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 226.442906 seconds.
-  path: Assets/Animations/玩家_攻擊上半身.mask
-  artifactKey: Guid(0d9db4748b34ce34fbc59463843b2799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/玩家_攻擊上半身.mask using Guid(0d9db4748b34ce34fbc59463843b2799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f050801bf57c25fdfdc7fa776c05ac4e') in 0.008044 seconds 
-  Import took 0.012866 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010687 seconds.
-  path: Assets/Animations/玩家_攻擊上半身.mask
-  artifactKey: Guid(0d9db4748b34ce34fbc59463843b2799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/玩家_攻擊上半身.mask using Guid(0d9db4748b34ce34fbc59463843b2799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f050801bf57c25fdfdc7fa776c05ac4e') in 0.008508 seconds 
-  Import took 0.013289 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 859.053802 seconds.
-  path: Assets/Animations/玩家_攻擊上半身.mask
-  artifactKey: Guid(0d9db4748b34ce34fbc59463843b2799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/玩家_攻擊上半身.mask using Guid(0d9db4748b34ce34fbc59463843b2799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '013107e719b6cfa5d46be098d01761fa') in 0.005300 seconds 
-  Import took 0.010869 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.715238 seconds.
-  path: Assets/Invector-3rdPersonController_LITE/Animator/Invector@BasicLocomotion.controller
-  artifactKey: Guid(cbd1db45c75e5b948a5befe9ecb80421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Invector-3rdPersonController_LITE/Animator/Invector@BasicLocomotion.controller using Guid(cbd1db45c75e5b948a5befe9ecb80421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '862a107ae715fbee1d6765c23102ad08') in 0.107212 seconds 
-  Import took 0.117134 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 104.448709 seconds.
-  path: Assets/Invector-3rdPersonController_LITE/Animator/Invector@BasicLocomotion.controller
-  artifactKey: Guid(cbd1db45c75e5b948a5befe9ecb80421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Invector-3rdPersonController_LITE/Animator/Invector@BasicLocomotion.controller using Guid(cbd1db45c75e5b948a5befe9ecb80421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4483f68ee4dfb5af96feaec9fa0fc10') in 0.106463 seconds 
-  Import took 0.115389 seconds .
+Start importing Assets/Invector-3rdPersonController_LITE/Animator/Invector@BasicLocomotion.controller using Guid(cbd1db45c75e5b948a5befe9ecb80421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '805a4a912cfaa42e3f9f2f03b2ee98f3') in 0.243674 seconds 
+  Import took 0.257652 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.125424 seconds.
+Registered in 0.016364 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.084 seconds
+- Completed reload, in  1.198 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1401 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.4 MB.
+Unloading 1402 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.3 MB.
 System memory in use after: 68.4 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1853.
-Total: 4.279100 ms (FindLiveObjects: 0.442600 ms CreateObjectMapping: 0.178800 ms MarkObjects: 3.540500 ms  DeleteObjects: 0.114100 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1854.
+Total: 2.381900 ms (FindLiveObjects: 0.159500 ms CreateObjectMapping: 0.057300 ms MarkObjects: 2.094600 ms  DeleteObjects: 0.069300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014316 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.740 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.99 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1402 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.3 MB.
+System memory in use after: 68.4 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1857.
+Total: 6.309600 ms (FindLiveObjects: 0.538600 ms CreateObjectMapping: 0.267600 ms MarkObjects: 5.405700 ms  DeleteObjects: 0.095000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006522 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.662 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1402 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.3 MB.
+System memory in use after: 68.4 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1860.
+Total: 4.156900 ms (FindLiveObjects: 0.234700 ms CreateObjectMapping: 0.097600 ms MarkObjects: 3.720900 ms  DeleteObjects: 0.101300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -258,81 +186,25 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 531.101825 seconds.
-  path: Assets/Animations/Man_Mesh@Uppercut.fbx
-  artifactKey: Guid(0578be428f2fdb34389cd7447b93b93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Man_Mesh@Uppercut.fbx using Guid(0578be428f2fdb34389cd7447b93b93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2539d81d42497ff6478dff6451d6e167') in 0.087388 seconds 
-  Import took 0.094548 seconds .
+  Time since last request: 686.954098 seconds.
+  path: Assets/Animations/Man_Mesh@Standing 2H Magic Attack 04.fbx
+  artifactKey: Guid(57e3c481aac880045af69d14d5582ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Man_Mesh@Standing 2H Magic Attack 04.fbx using Guid(57e3c481aac880045af69d14d5582ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ac88a215fed9706db6e9ee1e8fea97') in 0.141852 seconds 
+  Import took 0.150275 seconds .
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.018629 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.630 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1401 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.4 MB.
-System memory in use after: 68.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1856.
-Total: 4.086500 ms (FindLiveObjects: 0.267700 ms CreateObjectMapping: 0.104700 ms MarkObjects: 3.621000 ms  DeleteObjects: 0.090400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 212.888811 seconds.
-  path: Assets/Invector-3rdPersonController_LITE/Animator/Invector@BasicLocomotion.controller
-  artifactKey: Guid(cbd1db45c75e5b948a5befe9ecb80421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Invector-3rdPersonController_LITE/Animator/Invector@BasicLocomotion.controller using Guid(cbd1db45c75e5b948a5befe9ecb80421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e187bc4d051fec05b9661e8ba9efb9a8') in 0.066480 seconds 
-  Import took 0.072437 seconds .
+  Time since last request: 0.004430 seconds.
+  path: Assets/Animations/Man_Mesh@Standing 2H Magic Attack 04.fbx
+  artifactKey: Guid(57e3c481aac880045af69d14d5582ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Man_Mesh@Standing 2H Magic Attack 04.fbx using Guid(57e3c481aac880045af69d14d5582ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ac88a215fed9706db6e9ee1e8fea97') in 0.019652 seconds 
+  Import took 0.024752 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012510 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.697 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1401 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.4 MB.
-System memory in use after: 68.5 MB.
+Received Import Request.
+  Time since last request: 139.204299 seconds.
+  path: Assets/Animations/Man_Mesh@Standing 2H Magic Attack 04.fbx
+  artifactKey: Guid(57e3c481aac880045af69d14d5582ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Man_Mesh@Standing 2H Magic Attack 04.fbx using Guid(57e3c481aac880045af69d14d5582ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '853d10136e55605e69d0345b83ac06ac') in 0.021682 seconds 
+  Import took 0.030397 seconds .
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1859.
-Total: 4.070400 ms (FindLiveObjects: 0.268100 ms CreateObjectMapping: 0.099600 ms MarkObjects: 3.597400 ms  DeleteObjects: 0.103700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
