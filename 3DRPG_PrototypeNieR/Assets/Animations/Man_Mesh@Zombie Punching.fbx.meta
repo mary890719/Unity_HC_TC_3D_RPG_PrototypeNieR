@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: "\u73A9\u5BB6_\u666E\u653B\u7B2C\u4E09\u6BB5_\u65B0"
+    second: "\u73A9\u5BB6_\u666E\u653B\u7B2C\u4E09\u6BB5"
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -38,7 +38,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: "\u73A9\u5BB6_\u666E\u653B\u7B2C\u4E09\u6BB5_\u65B0"
+      name: "\u73A9\u5BB6_\u666E\u653B\u7B2C\u4E09\u6BB5"
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0

@@ -11,9 +11,11 @@ public class AttackSystem : MonoBehaviour
     public string parAttackPart = "普攻段數";
     public string parAttackGather = "普攻集氣";
     [Header("連擊間隔等待時間"), Range(0, 2)]
-    public float intervalBetweenAttackPart = 0.2f;
+    public float[] intervalBetweenAttackPart = { 0.5f, 0.5f, 0.7f };
     [Header("集氣時間"), Range(0, 2)]
     public float timeToAttackGather = 1;
+    [Header("攻擊段數"), Range(0, 10)]
+    public int countAttackPartMax = 3;
     #endregion
 
     #region 欄位：私人
@@ -60,7 +62,8 @@ public class AttackSystem : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Mouse0))                   // 按住 左鍵
         {
-            timerAttackGather += Time.deltaTime;            // 累加 計時器
+            timerAttackGather += Time.deltaTime;            // 累加 計時器集氣
+            timerAttackPart += Time.deltaTime;              // 累加 計時器段數
         }
         else if (Input.GetKeyUp(KeyCode.Mouse0))            // 放開 左鍵
         {
@@ -90,12 +93,29 @@ public class AttackSystem : MonoBehaviour
     /// </summary>
     private void AttackPart()
     {
-        countAttackPart++;
+        if (timerAttackPart <= intervalBetweenAttackPart[countAttackPart])              // 如果 計時器段數 <= 段數間隔
+        {
+            CancelInvoke();                                                             // 取消 
+            Invoke("RestoreAttackPartCountToZero", 1.5f);                               // 延遲呼叫
+            countAttackPart++;                                                          // 增加段數            
+        }
+        else                                                                            // 否則
+        {
+            countAttackPart = 0;                                                        // 段數歸零
+        }
+
+        timerAttackPart = 0;                                                            // 計時器歸零
+        ani.SetInteger(parAttackPart, countAttackPart);                                 // 更新段數參數
+        if (countAttackPart == countAttackPartMax) countAttackPart = 0;                 // 
+    }
+
+    /// <summary>
+    /// 恢復攻擊段數為零
+    /// </summary>
+    private void RestoreAttackPartCountToZero() 
+    {
+        countAttackPart = 0;
         ani.SetInteger(parAttackPart, countAttackPart);
     }
-    #endregion
-
-    #region 方法：公開
-
     #endregion
 }
