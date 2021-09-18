@@ -21,7 +21,15 @@ public class AttackSystem : MonoBehaviour
     /// <summary>
     /// 紀錄玩家按下左鍵的時間
     /// </summary>
-    private float timer;
+    private float timerAttackGather;
+    /// <summary>
+    /// 連段攻擊使用的計時器
+    /// </summary>
+    private float timerAttackPart;
+    /// <summary>
+    /// 攻擊段數
+    /// </summary>
+    private int countAttackPart;
     #endregion
 
     #region 事件
@@ -52,23 +60,21 @@ public class AttackSystem : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Mouse0))                   // 按住 左鍵
         {
-            timer += Time.deltaTime;                        // 累加 計時器
+            timerAttackGather += Time.deltaTime;            // 累加 計時器
         }
         else if (Input.GetKeyUp(KeyCode.Mouse0))            // 放開 左鍵
         {
-            if (timer >= timeToAttackGather)                // 如果 計時器>= 集氣時間
+            if (timerAttackGather >= timeToAttackGather)    // 如果 計時器>= 集氣時間
             {
                 AttackGather();
             }
             else                                            // 否則
             {
-                print("集器時間不夠");
+                AttackPart();
             }
 
-            timer = 0;                                      // 計時器 歸零
+            timerAttackGather = 0;                          // 計時器 歸零
         }
-
-        print("按下左鍵的時間：" + timer);
     }
 
     /// <summary>
@@ -77,6 +83,15 @@ public class AttackSystem : MonoBehaviour
     private void AttackGather()
     {
         ani.SetTrigger(parAttackGather);
+    }
+
+    /// <summary>
+    /// 攻擊段數
+    /// </summary>
+    private void AttackPart()
+    {
+        countAttackPart++;
+        ani.SetInteger(parAttackPart, countAttackPart);
     }
     #endregion
 
