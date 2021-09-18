@@ -1,4 +1,5 @@
 using UnityEngine;
+using Invector.vCharacterController;
 
 public class TransfromSystem : MonoBehaviour
 {
@@ -6,10 +7,11 @@ public class TransfromSystem : MonoBehaviour
     [Header("玩家變身前後模型物件")]
     public GameObject goTransfromBefore;
     public GameObject goTransfromAfter;
+    [Header("攝影機")]
+    public vThirdPersonCamera cam;
     #endregion
 
-    #region 欄位：私人
-    
+    #region 欄位：私人    
     #endregion
 
     #region 事件
@@ -31,6 +33,14 @@ public class TransfromSystem : MonoBehaviour
         {
             goTransfromBefore.SetActive(!goTransfromBefore.activeInHierarchy);
             goTransfromAfter.SetActive(!goTransfromAfter.activeInHierarchy);
+
+            // 攝影機 目標 設定為 目前顯示的模型
+            if (goTransfromBefore.activeInHierarchy) cam.SetTarget(goTransfromBefore.transform);
+            else if (goTransfromAfter.activeInHierarchy) cam.SetTarget(goTransfromAfter.transform);
+
+            // 同步座標
+            // goTransfromBefore.transform.position = goTransfromAfter.transform.position;
+            // goTransfromAfter.transform.position = goTransfromBefore.transform.position;
         }
     }
     #endregion
