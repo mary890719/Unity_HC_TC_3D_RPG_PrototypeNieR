@@ -54,12 +54,6 @@ public class AttackSystem : MonoBehaviour
     private void Update()
     {
         ClickTime();
-
-        am.SetHumanoidBodyPartActive(AvatarMaskBodyPart.Root, v.verticalSpeed <= 0.1f);
-        am.SetHumanoidBodyPartActive(AvatarMaskBodyPart.LeftLeg, v.verticalSpeed <= 0.1f);
-        am.SetHumanoidBodyPartActive(AvatarMaskBodyPart.RightLeg, v.verticalSpeed <= 0.1f);
-        am.SetHumanoidBodyPartActive(AvatarMaskBodyPart.LeftFootIK, v.verticalSpeed <= 0.1f);
-        am.SetHumanoidBodyPartActive(AvatarMaskBodyPart.RightFootIK, v.verticalSpeed <= 0.1f);
     }
     #endregion
 

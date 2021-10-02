@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
 
 /// <summary>
 /// AI 基底 3D 模式
@@ -25,6 +26,8 @@ public class AIBase3D : MonoBehaviour
     [Header("攻擊範圍尺寸與位移")]
     public Vector3 areaAttackSize = Vector3.one;
     public Vector3 areaAttackOffset;
+    [Header("傳送傷害給目標物延遲時間"), Range(0, 2)]
+    public float delaySendAttackToTarget = 0.3f;
     #endregion
 
     #region 欄位：私人
@@ -56,13 +59,12 @@ public class AIBase3D : MonoBehaviour
 
         #region 攻擊範圍
         Gizmos.color = new Color(0.2f, 0, 1, 0.3f);
-        Gizmos.matrix = Matrix4x4.TRS(Vector3.zero, transform.rotation, transform.localScale);
-        Gizmos.DrawCube(
-            transform.position +
-            transform.right * areaAttackOffset.x +
+        Gizmos.matrix = Matrix4x4.TRS(
+            transform.position + transform.right * areaAttackOffset.x +
             transform.up * areaAttackOffset.y +
             transform.forward * areaAttackOffset.z,
-            areaAttackSize);
+            transform.rotation, transform.localScale);
+        Gizmos.DrawCube(Vector3.zero, areaAttackSize);
         #endregion
     }
 
@@ -120,10 +122,11 @@ public class AIBase3D : MonoBehaviour
 
         if (distance <= rangeAttack)
         {
-            if (timerAttack>=cdAttack)
+            if (timerAttack >= cdAttack)
             {
                 ani.SetTrigger("攻擊觸發");
                 timerAttack = 0;
+                StartCoroutine(AttackAreaCheck());
             }
             else
             {
@@ -132,7 +135,24 @@ public class AIBase3D : MonoBehaviour
             }
 
             LookAtTarget();
-        }        
+        }
+    }
+
+    /// <summary>
+    /// 攻擊區域檢查，檢查是否有擊中目標
+    /// </summary>
+    private IEnumerator AttackAreaCheck()
+    {
+        yield return new WaitForSeconds(delaySendAttackToTarget);
+
+        Collider[] hits = Physics.OverlapBox(
+            transform.position +
+            transform.right * areaAttackOffset.x +
+            transform.up * areaAttackOffset.y +
+            transform.forward * areaAttackOffset.z,
+            areaAttackSize / 2, Quaternion.identity, 1 << 3);
+
+        hits[0].GetComponent<DamageSystem>().Damage(attack);
     }
 
     private void LookAtTarget()
