@@ -55,13 +55,16 @@ public class MissionManager : MonoBehaviour
 
         if (data.countNeed == 0) MissionFinish();
     }
+    #endregion
 
+    #region 方法：私人
     /// <summary>
     /// 任務完成
     /// </summary>
     private void MissionFinish()
     {
         state = StateMission.MissionFinish;
+        StartCoroutine(DialogueSystem.instance.ShowEveryDialogue(data.diaogueContentsFinish,false,true));
     }
     #endregion
 }
