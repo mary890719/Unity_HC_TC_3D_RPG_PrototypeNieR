@@ -20,16 +20,20 @@ public class DamageSystem : MonoBehaviour
     public UnityEvent onDamage;
     [Header("死亡事件：死亡之後要處理的行為")]
     public UnityEvent onDead;
+    [Header("死亡後通知任務管理器")]
+    public bool sendToMissionManager;
     #endregion
 
     #region 欄位：私人
     private Animator ani;
+    private float hpMax;
     #endregion
 
     #region 事件
     private void Awake()
     {
         ani = GetComponent<Animator>();
+        hpMax = hp;
     }
 
     private void Update()
@@ -49,8 +53,17 @@ public class DamageSystem : MonoBehaviour
 
         hp -= getAttack;
         ani.SetTrigger(parameterDamage);
+        onDamage.Invoke();
 
         if (hp <= 0) Dead();
+    }
+
+    /// <summary>
+    /// 更新血條介面
+    /// </summary>
+    public void UpdateHpUI()
+    {
+        imgHp.fillAmount = hp / hpMax;
     }
     #endregion
 
@@ -63,6 +76,8 @@ public class DamageSystem : MonoBehaviour
         hp = 0;
         ani.SetBool(parameterDead, true);
         onDead.Invoke();
+
+        if (sendToMissionManager) MissionManager.instance.UpdateMissionCount(1);
     }
     #endregion
 }

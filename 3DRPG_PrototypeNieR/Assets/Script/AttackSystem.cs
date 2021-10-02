@@ -1,5 +1,6 @@
-using Invector.vCharacterController;
 using UnityEngine;
+using System.Collections;
+using Invector.vCharacterController;
 
 /// <summary>
 /// 攻擊系統
@@ -18,6 +19,13 @@ public class AttackSystem : MonoBehaviour
     public float timeToAttackGather = 1;
     [Header("攻擊段數"), Range(0, 10)]
     public int countAttackPartMax = 3;
+    [Header("攻擊相關資料：攻擊力、尺寸與位移"), Range(0, 500)]
+    public float[] attack = { 10, 20, 30, 40 };
+    public Vector3[] areaAttackSize;
+    public Vector3[] areaAttackOffset;
+    public Color[] areaAttackColor;
+    public float[] delaySendAttackToTarget;
+
     public vThirdPersonController v;
     public AvatarMask am;
     #endregion
@@ -54,6 +62,23 @@ public class AttackSystem : MonoBehaviour
     private void Update()
     {
         ClickTime();
+    }
+
+    private void OnDrawGizmos()
+    {
+        #region 攻擊範圍
+        for (int i = 0; i < attack.Length; i++)
+        {
+            Gizmos.color = areaAttackColor[i];
+            Gizmos.matrix = Matrix4x4.TRS(
+                transform.position +
+                transform.right * areaAttackOffset[i].x +
+                transform.up * areaAttackOffset[i].y +
+                transform.forward * areaAttackOffset[i].z,
+                transform.rotation, transform.localScale);
+            Gizmos.DrawCube(Vector3.zero, areaAttackSize[i]);
+        }
+        #endregion
     }
     #endregion
 
@@ -104,6 +129,7 @@ public class AttackSystem : MonoBehaviour
     private void AttackGather()
     {
         ani.SetTrigger(parAttackGather);
+        StartCoroutine(AttackAreaCheck(3));
     }
 
     /// <summary>
@@ -111,20 +137,38 @@ public class AttackSystem : MonoBehaviour
     /// </summary>
     private void AttackPart()
     {
-        if (timerAttackPart <= intervalBetweenAttackPart[countAttackPart])              // 如果 計時器段數 <= 段數間隔
+        if (timerAttackPart <= intervalBetweenAttackPart[countAttackPart])                          // 如果 計時器段數 <= 段數間隔
         {
-            CancelInvoke();                                                             // 取消 
-            Invoke("RestoreAttackPartCountToZero", 1.5f);                               // 延遲呼叫
-            countAttackPart++;                                                          // 增加段數            
+            CancelInvoke();                                                                         // 取消 
+            Invoke("RestoreAttackPartCountToZero", intervalBetweenAttackPart[countAttackPart]);     // 延遲呼叫
+            StartCoroutine(AttackAreaCheck(countAttackPart));
+            countAttackPart++;                                                                      // 增加段數            
         }
-        else                                                                            // 否則
+        else                                                                                        // 否則
         {
-            countAttackPart = 0;                                                        // 段數歸零
+            countAttackPart = 0;                                                                    // 段數歸零
         }
 
-        timerAttackPart = 0;                                                            // 計時器歸零
-        ani.SetInteger(parAttackPart, countAttackPart);                                 // 更新段數參數
-        if (countAttackPart == countAttackPartMax) countAttackPart = 0;                 // 
+        timerAttackPart = 0;                                                                        // 計時器歸零
+        ani.SetInteger(parAttackPart, countAttackPart);                                             // 更新段數參數
+        if (countAttackPart == countAttackPartMax) countAttackPart = 0;
+    }
+
+    /// <summary>
+    /// 攻擊區域檢查，檢查是否有擊中目標
+    /// </summary>
+    private IEnumerator AttackAreaCheck(int indexAttack)
+    {
+        yield return new WaitForSeconds(delaySendAttackToTarget[indexAttack]);
+
+        Collider[] hits = Physics.OverlapBox(
+            transform.position +
+            transform.right * areaAttackOffset[indexAttack].x +
+            transform.up * areaAttackOffset[indexAttack].y +
+            transform.forward * areaAttackOffset[indexAttack].z,
+            areaAttackSize[indexAttack] / 2, Quaternion.identity, 1 << 6);      // 更換要攻擊的圖層
+
+        hits[0].GetComponent<DamageSystem>().Damage(attack[indexAttack]);
     }
 
     /// <summary>
